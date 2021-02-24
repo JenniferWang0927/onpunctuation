@@ -1,0 +1,89 @@
+body, html {
+    height: 100%;
+}
+
+
+.container {
+    display: inline-flex;
+    height: 100%;
+    width: 100%;
+    
+}
+
+.first-line {
+    display: inline-flex;
+    margin-top: 150px;
+}
+
+.three-dot {
+    font-size: 500px;
+    margin-top: -420px;
+    margin-left: 190px;
+}
+
+.left-area, .center, .right-area {
+    width: 33.33%;
+}
+
+.center {
+    margin: auto;
+    text-align: center;
+}
+
+
+.title {
+    margin-right: 10px;
+    margin-bottom: 200px;
+}
+
+.author {
+    font-size: 60px;
+}
+
+.right-area {
+    text-align: center;
+}
+
+.right-area div {
+    font-size: 250px;
+}
+
+.right-area .dot {
+    margin-top: 150px;
+}
+
+.mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+    .original {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .author {
+        height: 33.33%;
+        font-size: 35px;
+    }
+
+    .author span {
+        vertical-align: middle;
+    }
+
+    .paragraph {
+        height: 33.33%;
+        font-size: 30px;
+    }
+
+    .symbol {
+        height: 33.33%;
+        font-size: 72px;
+    }
+}
