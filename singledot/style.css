@@ -1,0 +1,119 @@
+body, html {
+    height: 100%;
+    font-family: 'Exo2ExtraBoldItalic';
+}
+@font-face {
+    font-family: 'Exo2ExtraBoldItalic';
+    src: url('/assets/Exo2ExtraBoldItalic-gaD6.ttf')  format('truetype');
+}
+.container {
+    height: 100%;
+}
+
+.first-line {
+    display: inline-flex;
+}
+
+.first-line .left-part {
+    margin-left: 300px;
+    width: 25%;
+    margin-right: 200px;
+}
+
+.single-dot,
+.tripple-dots,
+.exclamation-mark {
+    font-size: 300px;
+    margin: 0 40px;
+    text-decoration: none;
+    color: black;
+}
+
+.tripple-dots {
+    margin-top: 70px;
+}
+
+.question-mark,
+.semi-colon,
+.colon,
+.comma {
+    font-size: 250px;
+    margin: 0 20px;
+    text-decoration: none;
+    color: black;
+}
+
+
+.single-dot:hover,
+.tripple-dots:hover,
+.exclamation-mark:hover,
+.question-mark:hover,
+.semi-colon:hover,
+.colon:hover,
+.comma:hover {
+    font-size: 400px;
+    /* position: absolute; */
+    color:#ee7752;
+    cursor: pointer;
+}
+
+
+
+.right-part .singledot {
+    text-align: end;
+    font-size: 450px;
+    animation: flow 3s ease-in-out infinite;
+    background: linear-gradient(-60deg,#904e95,#904e95,#e73e7e,#ee7752);
+    background-size: 300%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.first-line .right-part {
+    width: 50%;
+    margin-top: 1px;
+}
+
+p {
+    margin: 40px 0;
+    font-size: 24px;
+}
+
+.bottom-area {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.double-exclamation-marks {
+    font-size: 240px;
+    margin-top: -65px;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+.back-to-main {
+    position: relative;
+    margin-left: 100px;
+    width: 100%;
+    text-align: end;
+    font-size: 80px;
+    text-decoration: none;
+}
+
+@keyframes flow {
+    0% {
+        background-position: 0 50%;
+    } 
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
+}

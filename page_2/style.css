@@ -1,0 +1,112 @@
+body, html {
+    height: 100%;
+    font-family: 'Exo2ExtraBoldItalic';
+}
+@font-face {
+    font-family: 'Exo2ExtraBoldItalic';
+    src: url('/assets/Exo2ExtraBoldItalic-gaD6.ttf')  format('truetype');
+
+}
+
+.container {
+    height: 100%;
+}
+
+.first-line {
+    display: inline-flex !important;
+}
+
+.first-line .left-part {
+    margin-left: 450px; 
+    width: 25%;
+}
+
+.first-line .left-part .question-mark {
+    font-size: 500px;
+    position: absolute;
+    color: #0CB1C4;
+    animation-name: spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+}   
+
+.first-line .right-part {
+    width: 30%;
+    margin-top: 100px;
+}
+
+p {
+    margin: 40px 0;
+    font-size: 24px;
+}
+
+.bottom-area {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 300px;
+}
+
+.double-exclamation-marks {
+    font-size: 240px;
+    margin-top: -65px;
+    margin-right: 100px;
+    margin-left: 100px;
+    text-decoration: none;
+}
+
+.double-exclamation-marks:hover {
+    color: coral;
+    cursor: pointer;
+}
+
+.three-dots {
+    font-size: 250px;
+    margin-top: -170px;
+    margin-right: 500px;
+}
+
+.three-dots:hover {
+    animation: blinking 1s infinite;
+    cursor: pointer;
+}
+
+.back-to-main {
+    position: relative;
+    margin-left: 340px;
+    text-decoration: none;
+}
+
+.back-to-main:hover {
+    color: lightskyblue;
+    font-size: 100px;
+    cursor: pointer;
+}   
+
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+
+@keyframes blinking {
+    0% {
+      color: #ff3d50;
+    }
+    /* YOU CAN ADD MORE COLORS IN THE KEYFRAMES IF YOU WANT */
+    50% {
+      color: #55d66b;
+    }
+   
+    100% {
+      color: #222291;
+    }
+  }

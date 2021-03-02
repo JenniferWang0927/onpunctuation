@@ -1,8 +1,11 @@
 body, html {
     height: 100%;
+    font-family: 'Exo2ExtraBoldItalic';
 }
-
-
+@font-face {
+    font-family: 'Exo2ExtraBoldItalic';
+    src: url('/assets/Exo2ExtraBoldItalic-gaD6.ttf')  format('truetype');
+}
 .container {
     display: inline-flex;
     height: 100%;
@@ -13,6 +16,13 @@ body, html {
 .first-line {
     display: inline-flex;
     margin-top: 150px;
+}
+
+.question-mark {
+    cursor: pointer;
+    z-index: 100;
+    text-decoration: none;
+    color: violet;
 }
 
 .three-dot {
@@ -37,7 +47,7 @@ body, html {
 }
 
 .author {
-    font-size: 60px;
+    font-size: 72px;
 }
 
 .right-area {
